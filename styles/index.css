@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-hero{
+    display: flex;
+    height: 100vh;
+}
+section.right{
+    background: url("http://localhost:8080/request-intership-docs/images/blue-bg.png");
+    width: 60%;
+    position: relative;
+}
+section.left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0%;
+}
+.logo img{
+    max-width:100%;
+    max-height:100%;
+}
+#login-form{
+    width: 70%;
+    position: absolute;
+    bottom: 5%;
+}
+#login-form > input{
+    width: 100%;
+    border: 0px;
+    margin-bottom: 4em;
+    padding: 12px 0;
+    font-size: 1.1rem;
+}
+#login-form > input[type=text],#login-form > input[type=password]{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px; 
+    text-align: center;
+}
+#login-form > input[type=submit]{
+    color: white;
+    background-color: #31A3DD;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    transform: all ease .3s;
+}
+#login-form > input[type=submit]:hover {
+    background-color: #2a6496;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 25%;
+    left: 80px;
+    line-height: 4em;
+    animation: 1s 0s 1 slideUp;
+    
+}
+
+.content h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7rem;
+    
+    
+}
+@keyframes slideUp {
+    0% {
+      transform: translateY(-100%) ;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+ 
+   
+    
+    
+  

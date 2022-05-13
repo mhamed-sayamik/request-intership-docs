@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+:root {
+    --darkBlue: #2a6496;
+    --lightBlue: #31A3DD;
+}
+.bg-hero{
+    margin: 0 2em;
+}
+.top{
+    margin-top: 2em;
+    margin-bottom: 3.5em;
+    border: 2px solid var(--darkBlue);
+    padding: 1em;
+}
+.top h1{
+    font-size: 2rem;
+    line-height: 1.2em;
+    text-align: center;
+}
+h1, h2, h3, h4{
+    font-family: 'Montserrat', sans-serif;;
+}
+p,input,button,label{
+    font-family: 'Raleway', sans-serif;
+}
+    
+.top form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 2.5em;
+}
+.input-grp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input-grp label{
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: .8em;
+}
+.top input[type="text"]{
+    border: 2px solid var(--darkBlue);
+    padding: 3.5px 8px;
+    
+}
+.top input[type="submit"] {
+    background-color: var(--lightBlue);
+    color: white;
+    padding: 3.5px 8px;
+    font-weight: 500;
+    transform: all ease .3s;
+    border-radius: 1px;
+}
+.top input[type="submit"]:hover {
+    background-color: var(--darkBlue);
+}
+.bottom form input{
+    border-bottom: 2px solid var(--darkBlue);
+    width: 40% ;
+    word-spacing: 0.1em;
+    font-size: 1.3em;
+    text-align: center;
+    padding-bottom: 4px;
+}
+.entr-container{
+    margin-top: 5em;
+}
+.entr{
+    display: inline-block;
+    width: 10em;
+    border: 1px solid var(--darkBlue);
+    padding: 3px;
+    border-radius: 20px;
+    margin-right: 2em;
+}
+.entr:last-child{
+    margin-right: 0;
+}
+
