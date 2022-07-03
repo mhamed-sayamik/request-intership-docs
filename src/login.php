@@ -1,14 +1,16 @@
 <?php
-    include_once "db.class.php";
-    $stud_user = $_POST['stud_user'];
-    $stud_password = $_POST['stud_password'];
-    $stud_password = md5($stud_password);
-    $db_logins = new db("localhost", "root", "","est","etudiant");
-    $tablename = "etudiant";
-    $query = "SELECT * FROM $tablename WHERE user='$stud_user' AND password='$stud_password';";
-    if (mysqli_num_rows($db_logins->fetch_query($query)) == 1){
-        $_SESSION["stud_user"]=$stud_user;
-        header("Location: http://localhost:8080/request-intership-docs/dashboard.php");
+    include_once "database-funs.php";
+    if($login_row = CheckLogin($_POST['stud_user'], $_POST['stud_password'])){
+        $_SESSION["stud_id"] = $login_row['id'];
+        $_SESSION["name"] = $login_row['prenom']." ".$login_row['nom'];
+        $_SESSION["filiere"] = $login_row['filiere'];
+        $_SESSION["niveau"] = $login_row['id_Niveau'];
+        header("Location: http://localhost:8080/request-intership-docs/generate-file.php");
+    } 
+    elseif($login_row = CheckAdminLogin($_POST['stud_user'], $_POST['stud_password'])){
+        $_SESSION["admin_id"] = $login_row['id'];
+        $_SESSION["name"] = $login_row['prenom']." ".$login_row['nom'];
+        header("Location: http://localhost:8080/request-intership-docs/admin/depot.php");
     }else{
         $_SESSION["msg"]="incorrect Nom d'utilisateur ou mot de pass !";
     }                           

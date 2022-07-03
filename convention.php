@@ -2,13 +2,10 @@
 session_start();
 //check if user authentificated
 include_once "src/is_auth.php";
-// get student informations if we didn't have it from dashboard
-if (!isset($_SESSION['stud_fullname'])) include_once "src/student.php";
-//get entreprises informations
-include_once "src/entreprise.php";
+
 //generate conv on click
 if(isset($_POST["gen-conv"])){
-  include_once "src/generate-conv.php";
+  include "src/generate-conv.php";
 }
 ?>
 <!DOCTYPE html>
@@ -43,24 +40,6 @@ if(isset($_POST["gen-conv"])){
       <input type="submit" name="gen-conv" value="générer ma convention">
     </form>
     </section>
-    <section class="bottom">
-      <form><input type="text" name="q" placeholder="recherchez une entreprise et taper <entrée>"><input type="submit" hidden></form>
-      <div class="entr-container">
-      <?php
-      if ($entr_rows->num_rows > 0) {
-        // output data of each row
-        $i = 0;
-        while($entr_row = $entr_rows->fetch_assoc()) {
-          $id = "entr$i";
-          echo "<div class='entr' id='$id'><h3>{$entr_row['nom']}</h3><p>{$entr_row['adress']}</p><input type='button' value='sélectionner' onclick='fillEntrForm(\"$id\")'></div>";
-          ++$i;
-        }
-      }else{
-			echo "<div class='msg'><p>entreprise non trouvé, vous pouvez l'ajouter !</p></div>";
-      }
-      ?>
-      </div>
-    </section> 
   </div>
 </body>
 

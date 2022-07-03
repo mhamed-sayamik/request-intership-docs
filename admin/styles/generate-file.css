@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #f4f6fc;
+}
+.main{
+    margin-left: 4em;
+    padding: 3em;
+}
+.page-name{
+    color: #2E384D;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 32px;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+}
+.content-card{
+    background: #FFF;
+    padding: 2em 2em 2.6em;
+    min-height: 30vh;
+}
+.card-name{
+    text-transform: uppercase;
+    color: #8798AD;
+    font-weight: 400;
+    font-size: .7rem;
+    letter-spacing: 1.2px;
+    margin-left: -8px;
+    margin-bottom: 2em;
+}
+.card-breakdown{
+    color: #2E384D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .95rem;
+    margin-bottom: 2em;
+}
+.coll{
+    display: inline-flex;
+    flex-direction: column;
+}
+.coll label{
+    font-weight: 500;
+    font-size: .6rem;
+    letter-spacing: 1.125px;
+    text-transform: uppercase;
+    color: #B0BAC9;
+    margin-bottom: 7px;
+}
+.coll input{
+    background: rgba(224, 231, 255, 0.2);
+    border: 1px solid #E0E7FF;
+    border-radius: 5px;
+    padding: .4em 1.7em;
+    margin-right: 1em;
+    margin-bottom: 1.5em;   
+}
+.coll input[type="date"]{
+    padding: .6em 3.35em;
+}
+#stage-form input[type="submit"]{
+    font-weight: 500;
+    color: #FFFFFF;
+    background: #2E5BFF;
+    padding: 1em 3em;
+    text-transform: capitalize;
+    font-size: .7rem;
+    margin-right: 3em;
+    border-radius: 3.5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}

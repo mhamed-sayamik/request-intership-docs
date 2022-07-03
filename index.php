@@ -1,7 +1,7 @@
 <?php
     session_start();
-    if(isset($_SESSION["stud_user"])){  
-        header("Location: http://localhost:8080/request-intership-docs/dashboard.php");
+    if(isset($_SESSION["stud_id"])){  
+        header("Location: http://localhost:8080/request-intership-docs/generate-file.php");
     }
     if(isset($_POST["login"])){
         include_once "src/login.php";
@@ -41,8 +41,9 @@
         </section>
         <section class="right">
             <div class="content">
-                <h1>télécharger votre documentsde stage facilement.</h1>
+                <h1>Télécharger votre documents de stage facilement.</h1>
             </div>
+            <div class="img"><img src="images/students.png"></div>
         </section>
     </div>
 </body>

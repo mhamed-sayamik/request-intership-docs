@@ -11,6 +11,10 @@ class ComposerStaticInitc452d98af12699997c7f63aaa6d28832
         array (
             'PhpOffice\\PhpWord\\' => 18,
         ),
+        'N' => 
+        array (
+            'NcJoes\\OfficeConverter\\' => 23,
+        ),
         'L' => 
         array (
             'Laminas\\Escaper\\' => 16,
@@ -21,6 +25,10 @@ class ComposerStaticInitc452d98af12699997c7f63aaa6d28832
         'PhpOffice\\PhpWord\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoffice/phpword/src/PhpWord',
+        ),
+        'NcJoes\\OfficeConverter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ncjoes/office-converter/src/OfficeConverter',
         ),
         'Laminas\\Escaper\\' => 
         array (

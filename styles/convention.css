@@ -59,10 +59,10 @@ p,input,button,label{
     transform: all ease .3s;
     border-radius: 1px;
 }
-.top input[type="submit"]:hover {
+.top input[type="submit"]:hover{
     background-color: var(--darkBlue);
 }
-.bottom form input{
+.bottom form input[type=text]{
     border-bottom: 2px solid var(--darkBlue);
     width: 40% ;
     word-spacing: 0.1em;
@@ -75,13 +75,30 @@ p,input,button,label{
 }
 .entr{
     display: inline-block;
-    width: 10em;
-    border: 1px solid var(--darkBlue);
-    padding: 3px;
+    width: 15em;
+    border: 2px solid var(--darkBlue);
+    padding: 30px;
     border-radius: 20px;
     margin-right: 2em;
+    padding-bottom: 15px;
 }
 .entr:last-child{
     margin-right: 0;
 }
-
+.entr h3{
+    margin-bottom: 1em;
+}
+.entr p{
+    margin-bottom: 2em;
+}
+.entr input{
+    background-color: var(--lightBlue);
+    color: white;
+    padding: 12px 15px;
+    transform: all ease .3s;
+    border-radius: 35px;
+    float: right;
+}
+.entr input:hover{
+    background-color: var(--darkBlue);
+}

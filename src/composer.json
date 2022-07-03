@@ -1,5 +1,6 @@
 {
     "require": {
-        "phpoffice/phpword": "^0.18.3"
+        "phpoffice/phpword": "^0.18.3",
+        "ncjoes/office-converter": "^1.0"
     }
 }

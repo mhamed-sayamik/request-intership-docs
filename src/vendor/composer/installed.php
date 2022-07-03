@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '701f0dd04b359e809a31cb06a45faa7a9164a758',
+        'reference' => '5ad2f7eca3f766a8750a0088b1f1e52d22cec426',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '701f0dd04b359e809a31cb06a45faa7a9164a758',
+            'reference' => '5ad2f7eca3f766a8750a0088b1f1e52d22cec426',
             'dev_requirement' => false,
         ),
         'laminas/laminas-escaper' => array(
@@ -26,6 +26,15 @@
             'install_path' => __DIR__ . '/../laminas/laminas-escaper',
             'aliases' => array(),
             'reference' => '891ad70986729e20ed2e86355fcf93c9dc238a5f',
+            'dev_requirement' => false,
+        ),
+        'ncjoes/office-converter' => array(
+            'pretty_version' => 'v1.0.3',
+            'version' => '1.0.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ncjoes/office-converter',
+            'aliases' => array(),
+            'reference' => 'b0e549388380572e1cb1864283d83b819578e813',
             'dev_requirement' => false,
         ),
         'phpoffice/phpword' => array(

@@ -10,8 +10,13 @@ class db{
 		$this->connection->set_charset($charset);
 	}
 
-    public function fetch_query($query) {
+    public function normal_query($query) {
         $result = $this->connection->query($query);
+        return $result;
+    }
+	public function result_query($query) {
+        $row = $this->normal_query($query);
+		$result = mysqli_fetch_assoc($row);
         return $result;
     }
 	public function close(){

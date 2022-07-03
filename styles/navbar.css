@@ -1,0 +1,156 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: white;
+    width: 250px;
+    transition: all 0.5s ease;
+}
+
+.links{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+.links li{
+    height: 56px;  
+}
+.link{
+    position: absolute;
+    background: white;
+    display: flex;
+    height: 56px;
+    width: 100%;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+.links li a{
+    text-decoration: none;
+}
+.link i{
+    font-size: 28px;
+    color: #BFC5D2;
+    margin-left: 1em;
+    transition: all 0.5s ease;
+}
+.link-name{
+    font-size: 0.94rem;
+    margin-left: .7em;
+    color: #B0BAC9;
+    transition: all 0.5s ease;
+}
+
+.clicked-link{
+    border-left: 4px solid #2E5BFF;
+    background: #d5deff;
+}
+.clicked-link .link-name{
+    color: #2E5BFF;
+}
+.profile{
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    font-size: 0.85rem;
+    transition: all 0.5s ease;
+}
+.profile-hello{
+    color: #2E384D;
+}
+.profile-nom{
+    text-transform: capitalize;
+    font-family: 0.85rem;
+    color: #BFC5D2;
+}
+.navbar-container>i{
+    font-size: 28px;
+    color: #BFC5D2;
+    margin-top: 1em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.close{
+width: 4em;
+}
+.close .link-name, .close .profile{
+    display: none;
+}
+.close .link i{
+    margin: 0;
+}
+.close .link{
+    justify-content: center;
+}
+#notifs-container{
+    background-color: white;
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-right: .3vh solid #e4e8f0;
+    border-left: .3vh solid #e4e8f0;
+    overflow: scroll;
+
+}
+.hide{
+    display: none;
+}
+.notif{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    border-top: .3vh solid #e4e8f0;
+}
+.notif:last-child{
+    border-bottom: .3vh solid #e4e8f0;
+}
+.icon-container{
+    width: 5em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon-container i{
+    background: #f2f3f6;
+    color: #2E5BFF;
+    font-size: 1.1rem;
+}
+.notif-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.notif .heading{
+    font-weight: 500;
+    font-size: .8rem;
+    letter-spacing: 1.125px;
+    text-transform: uppercase;
+    color: #B0BAC9;
+    margin-bottom: 4px;
+}
+.notif .notif-text{
+    color: #2E384D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .95rem;
+    margin-bottom: 4px;
+
+}
+.notif .notif-period{
+    color: #B0BAC9;
+    font-weight: 400;
+    font-size: .8rem;
+
+}
